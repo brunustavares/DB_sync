@@ -1,0 +1,138 @@
+/**
+ * _DBsync_
+ * PHP app for synchronization of registrations and grades, between Moodle
+ * and WISEflow databases (MySQL) and academic management system (Oracle).
+ * (developed for UAb - Universidade Aberta)
+ *
+ * @package    _DBsync_
+ * @category   app
+ * @author     Bruno Tavares <brunustavares@gmail.com>
+ * @link       https://www.linkedin.com/in/brunomastavares/
+ * @copyright  Copyright (C) 2024-2025 Bruno Tavares
+ * @license    GNU General Public License v3 or later
+ *             https://www.gnu.org/licenses/gpl-3.0.html
+ * @version    2025072811
+ * @date       2024-04-04
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+.main {
+    font-family: "Audiowide", sans-serif;
+    font-size: 15px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1025px) {
+    .main {
+        width: 40%!important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        width: 70%!important;
+    }
+}
+
+.logo_div {
+    position: fixed;
+    width: inherit;
+    text-align: center;
+    background-color: white;
+}
+
+.logo_pic {
+    width: 250px;
+    height: 250px;
+}
+
+.results_div {
+    margin-top: 250px;
+    text-align: left;
+
+}
+
+.results_div:before {
+    content: "";
+    width: 100%;
+    height: 10%;
+    left: 0px;
+    position: fixed;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+.title_lbl {
+    font-size: large;
+}
+
+.result_lbl {
+    display: none;
+    font-size: small;
+}
+
+.title_lbl,
+.result_lbl,
+.break {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.info_tbl {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.pbar {
+    width: auto;
+    margin: 20px;
+    height: 8px;
+    position: relative;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.the_end {
+    border: none;
+    text-align: center;
+}
+
+/* copyright */
+    #div_cr {
+        position: relative;
+        font-size: 16px;
+        text-align: right;
+        z-index: 1;
+
+    }
+
+    a[title="desenvolvido por..."] {
+        color: #f0f0f0 !important;
+
+    }
+
+    a[title="desenvolvido por..."]:hover {
+        color: #a0a0a0 !important;
+        cursor: pointer;
+
+    }
+
+    a[title="desenvolvido por..."],
+    a[title="desenvolvido por..."]:hover {
+        transition: color 0.5s ease-in-out;
+
+    }

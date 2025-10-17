@@ -1,0 +1,5 @@
+bak/
+auth_lib_dbs.php
+*.bat
+SyncToy*
+_DBsync_.md
